@@ -317,6 +317,7 @@ plt.show()
 # Apply K-Means with optimal K (e.g., 3 based on elbow method)
 ## The inertia decreased a lot more through the first few clusters, but improvements were getting smaller over time after 3 clusters.
 ## 3 clusters was the random example, but after a bit of testing it was discovered to be the sweet spot.
+##Three clusters created groups with different customer spending patterns. 
 optimal_k = 3
 kmeans = KMeans(n_clusters=optimal_k, random_state=42, n_init=10)
 df['cluster'] = kmeans.fit_predict(X_scaled)
