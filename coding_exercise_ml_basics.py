@@ -71,6 +71,8 @@ r2 = r2_score(y_test, test_predictions)
 print(f"\nMean Absolute Error: ${mae:,.2f}")
 print(f"R-squared: {r2:.3f}")
 # Make prediction for a new house: 2000 sq ft in Downtown
+# The Ames dataset uses neighborhood names instead of Downtown / suburbs/ etc.
+# OldTown is used as the location for this 2000 sq ft example
 new_house = pd.DataFrame({'square_footage': [2000], 'location': ['OldTown']})
 predicted_price = model.predict(new_house)
 
