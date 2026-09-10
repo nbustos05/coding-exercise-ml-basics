@@ -37,9 +37,6 @@ df = df.dropna(
 print("Number of house records:", len(df))
 print(df.head())
 
-# To allow the notebook to proceed without error, I will temporarily create a dummy DataFrame.
-# You will need to replace this with your actual data loading and preprocessing.
-
 # Features and target
 # x has the features that are used to predict/ y has the house predicts we're trying to predict
 X = df[['square_footage', 'location']]
