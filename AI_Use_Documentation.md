@@ -10,3 +10,5 @@ I reviewed the code changes or additions that ChatGPT had recommended related to
 Gemini AI assistant on colab was also a great tool for troubleshooting and implementing tedious fixes such as indentation errors, or even highlighting greater issues within the code such as keyerrors. Gemini wasn't able to troubleshoot every error or issue, but it made the process a lot easier by letting me know the type of error my code contained and if had to do with the datasets not being implemented correctly.
 
 I tried to keep the starter code as close to the original as possible while still meeting the requirements. I tried to only change or include what was required/needed after changing the sample data into new data sets. The thought process behind this was that I wanted to be able to understand ml concepts at their core and trying to keep the ml tool as simple as possible for this starter assignment was the best approach. 
+
+Before being uploaded on github, I reviewed the final code to make sure it ran each question with appropriate output. The Question 3 output was especially important as it would also provide me with a downloadable elbow plot in google colab. 
