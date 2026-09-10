@@ -4,7 +4,7 @@
 
 I used both google gemini and ChatGPT as a learning and coding tool while solving the assignment problems.
 ChatGPT was a great tool for finding realistic data sets that would meet the requirements of the projects, before getting started on actually implementing changes upon the starter code. 
-ChatGPT was used to brainstorm needed changes , help with troubleshooting errors, and provide feedback on how to make ml model run smoother.
+ChatGPT was used to brainstorm needed changes , help with troubleshooting errors, and provide both code and feedback on how to make ml model run smoother.
 I reviewed the code changes or additions that ChatGPT had recommended related to the datasets. I also manually ran each part of the assignment after implementing code and code that ChatGPT had provided/recommended, to make sure it ran appropriately before making further changes/additions. 
 
 Gemini AI assistant on colab was also a great tool for troubleshooting and implementing tedious fixes such as indentation errors, or even highlighting greater issues within the code such as keyerrors. Gemini wasn't able to troubleshoot every error or issue, but it made the process a lot easier by letting me know the type of error my code contained and if had to do with the datasets not being implemented correctly.
