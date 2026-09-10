@@ -15,8 +15,11 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import mean_absolute_error, r2_score
-# Generate sample data
+
 # Used to load the Ames housing dataset that will be used to train the model and run tests
+## Data Source: Ames Housing Dataset from OpenML
+## https://www.openml.org/search?type=data&status=active&id=42165
+
 df = pd.read_csv("ames_house_prices.csv", na_values="?")
 
 df = df[["GrLivArea", "Neighborhood", "SalePrice"]]
@@ -101,7 +104,9 @@ from sklearn.metrics import (
     f1_score,
     confusion_matrix
 )
-# Generate sample customer data
+## Data Source: Iranian Churn Dataset from UCI Machine Learning Repository
+## https://archive.ics.uci.edu/dataset/563/iranian+churn+dataset
+
 df = pd.read_csv("iranian_churn.csv")
 
 df.columns = [" ".join(column.split()) for column in df.columns]
@@ -258,7 +263,9 @@ import numpy as np
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
-# Generate sample customer data
+
+## Data Source: Wholesale Customers Dataset from UCI Machine Learning Repository
+## https://archive.ics.uci.edu/dataset/292/wholesale+customers
 df = pd.read_csv("wholesale_customers.csv")
 
 print("Number of customer records:", len(df))
