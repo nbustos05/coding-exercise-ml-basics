@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1N1_ep3n1GxNmLxIxS_Xrbhc879qUlsQH
 """
 
-## QUESTION 1
+## **QUESTION 1
 
 import pandas as pd
 import numpy as np
@@ -86,7 +86,7 @@ print("\nModel Coefficients:")
 for feature, coef in zip(feature_names, coefficients):
   print(f"{feature}: {coef:.2f}")
 
-## QUESTION 2
+## **QUESTION 2
 
 import pandas as pd
 import numpy as np
@@ -253,7 +253,7 @@ print("\nModel Coefficients:")
 for feature, coef in zip(feature_names, coefficients):
     print(f"{feature}: {coef:.2f}")
 
-## QUESTION 3
+## **QUESTION 3
 
 import pandas as pd
 import numpy as np
