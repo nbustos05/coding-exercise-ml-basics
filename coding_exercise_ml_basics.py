@@ -29,7 +29,7 @@ df = df.rename(columns={
     "Neighborhood": "location",
     "SalePrice": "price"
 })
-# remove rows that are missing values, for the most conslusive data possible
+# remove rows that are missing values so that the model uses complete records
 df = df.dropna(
     subset=["square_footage", "location", "price"]
 )
@@ -81,10 +81,15 @@ feature_names = (model.named_steps['preprocessor']
 .named_transformers_['location']
 .get_feature_names_out(['location'])).tolist() + \
 ['square_footage']
+
 coefficients = model.named_steps['regressor'].coef_
 print("\nModel Coefficients:")
 for feature, coef in zip(feature_names, coefficients):
   print(f"{feature}: {coef:.2f}")
+    ## The square_footage coefficient shows the estimated change in house price
+## for each additional square foot, while keeping the neighborhood the same
+## The location coefficients show how the predicted price changes by neighborhood
+## compared with the reference neighborhood used by OneHotEncoder
 
 ## **QUESTION 2
 
